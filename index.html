@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nishad Damle | Cybersecurity Portfolio</title>
+  <meta name="description" content="Nishad Damle — Network Engineer | Cybersecurity Enthusiast | Data Analyst. Linux, Python, Power BI, Wireshark, SQL." />
+  <meta name="author" content="Nishad Damle" />
+  <link rel="icon" type="image/png" href="src/assets/images/mockup.png" />
+  <link rel="stylesheet" href="src/css/main.css" />
+  <link rel="stylesheet" href="src/css/animations.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-content">
+      <div class="logo">ND</div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#skills" onclick="closeMenu()">Skills</a>
+        <a href="#experience" onclick="closeMenu()">Experience</a>
+        <a href="#education" onclick="closeMenu()">Education</a>
+        <a href="#certifications" onclick="closeMenu()">Certifications</a>
+        <a href="#projects" onclick="closeMenu()">Projects</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content fade-in">
+      <h1>NISHAD DAMLE</h1>
+      <p class="subtitle">Network Engineer | Cybersecurity Enthusiast | Data Analyst</p>
+
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-dot dot-red"></div>
+          <div class="terminal-dot dot-yellow"></div>
+          <div class="terminal-dot dot-green"></div>
+        </div>
+        <div class="terminal-text">
+          <p><span class="prompt">$</span> <span class="command">./get_profile.sh</span></p>
+          <p class="output">Focus areas:</p>
+          <p class="output"><span class="prompt">&gt;</span> Network Security (TCP/IP, Firewalls, VLANs)</p>
+          <p class="output"><span class="prompt">&gt;</span> Linux · Bash · Python · SQL</p>
+          <p class="output"><span class="prompt">&gt;</span> Wireshark · SIEM · IDS/IPS</p>
+          <br>
+          <p><span class="prompt">$</span> <span class="command">cat contact.txt</span></p>
+          <p class="output">Email: <a class="link" href="mailto:nishaddamle2002@gmail.com">nishaddamle2002@gmail.com</a></p>
+          <p class="output">LinkedIn: <a class="link" target="_blank" href="https://www.linkedin.com/in/nishaddamle2002/">linkedin.com/in/nishaddamle2002</a></p>
+          <p class="output">GitHub: <a class="link" target="_blank" href="https://github.com/nishaddamle2002">github.com/nishaddamle2002</a></p>
+          <br>
+          <p><span class="prompt">$</span> <span class="command">./get_status.sh</span></p>
+          <p class="output">Google Cybersecurity Professional Certificate — In progress (4/9).</p>
+          <p class="output">Exploring network defense, SIEM tools, and Linux hardening.</p>
+          <p class="cursor">_</p>
+        </div>
+      </div>
+
+      <div class="cta-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="Nishad Damle Resume.pdf" target="_blank" class="btn btn-secondary">View Resume</a>
+      </div>
+    </div>
+  </section>
+  
+  <section id="about">
+    <h2>About Me</h2>
+  
+    <div class="about-container">
+      <!-- LEFT: text + stats -->
+      <div class="about-content fade-in">
+        <div class="about-text">
+          <p class="about-intro">
+            Hi! I'm <span class="highlight">Nishad</span> a Network Engineer @ Ubiquiti Inc. transitioning into cybersecurity.
+            I enjoy packet analysis, system hardening, and building efficient, secure workflows.
+          </p>
+          <p>
+            Currently pursuing the <strong>Google Cybersecurity Professional Certificate</strong> (4/9), covering
+            risk frameworks, network security, Linux &amp; SQL, SIEM/IDS, and incident response.
+          </p>
+        </div>
+  
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Years of Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Cups of Coffee</div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- RIGHT: code window -->
+      <div class="about-image fade-in" style="animation-delay:.08s">
+        <div class="code-window">
+          <div class="code-header">
+            <div class="code-dot dot-red"></div>
+            <div class="code-dot dot-yellow"></div>
+            <div class="code-dot dot-green"></div>
+            <span class="code-title">about.js</span>
+          </div>
+          <div class="code-content">
+  <pre><code><span class="code-keyword">const</span> <span class="code-variable">nishad</span> = {
+    <span class="code-property">name</span>: <span class="code-string">"Nishad Damle"</span>,
+    <span class="code-property">role</span>: <span class="code-string">"Network Engineer → Cybersecurity"</span>,
+    <span class="code-property">location</span>: <span class="code-string">"Mumbai, India"</span>,
+    <span class="code-property">interests</span>: [<span class="code-string">"Network Security"</span>, <span class="code-string">"Linux"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"SQL"</span>, <span class="code-string">"SIEM Tools"</span>],
+    <span class="code-property">currentlyLearning</span>: [<span class="code-string">"Google Cybersecurity Professional Certificate (4/9)"</span>],
+    <span class="code-property">funFact</span>: <span class="code-string">"I enjoy packet analysis and building secure systems."</span>
+  };</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+
+      <div class="skill-category fade-in">
+        <h3>Cybersecurity & Networks</h3>
+        <div class="skill-item">
+          <div class="skill-name"><span>TCP/IP · Firewalls</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-progress" style="width:0%" data-width="90%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span>Routing & VLANs</span><span>80%</span></div>
+          <div class="skill-bar"><div class="skill-progress" style="width:0%" data-width="80%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span>Wireshark / IDS · SIEM</span><span>75%</span></div>
+          <div class="skill-bar"><div class="skill-progress" style="width:0%" data-width="75%"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category fade-in" style="animation-delay: .1s;">
+        <h3>Programming & Data</h3>
+        <div class="skill-item">
+          <div class="skill-name"><span>Python</span><span>80%</span></div>
+          <div class="skill-bar"><div class="skill-progress" style="width:0%" data-width="80%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span>SQL</span><span>75%</span></div>
+          <div class="skill-bar"><div class="skill-progress" style="width:0%" data-width="75%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span>Bash / Linux</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-progress" style="width:0%" data-width="85%"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category fade-in" style="animation-delay: .2s;">
+        <h3>Tools & Visualization</h3>
+        <div class="skill-item">
+          <div class="skill-name"><span>Power BI / Tableau</span><span>80%</span></div>
+          <div class="skill-bar"><div class="skill-progress" style="width:0%" data-width="80%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span>Git/GitHub</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-progress" style="width:0%" data-width="85%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span>Figma</span><span>70%</span></div>
+          <div class="skill-bar"><div class="skill-progress" style="width:0%" data-width="70%"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Network Engineer — Ubiquiti Inc. (UniFi OS)</h3>
+          <div class="timeline-date">Jun 2024 – Present · Mumbai</div>
+          <p class="timeline-description">
+            Contribute to UniFi OS firmware/software improvements and reliability. Monitor performance,
+            troubleshoot issues, and optimize deployment pipelines and diagnostic tools. Collaborate across
+            hardware/software teams on integrations.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Data Analyst Intern — Print Venture</h3>
+          <div class="timeline-date">Jan 2023 – Mar 2024</div>
+          <p class="timeline-description">
+            Built BI dashboards in Power BI &amp; SQL for operational insights. Automated reporting and supported
+            data-driven decisions across teams.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Data Science Intern — CodeClause</h3>
+          <div class="timeline-date">Dec 2022 – Jan 2023</div>
+          <p class="timeline-description">
+            Built ML-based loan prediction and analyzed Uber ride data. Delivered insights using Python (pandas, matplotlib).
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>B.E. in Electronics Engineering</h3>
+          <div class="timeline-date">Thakur College of Engineering &amp; Technology | 2020–2024</div>
+          <p class="timeline-description">Graduated with core foundations in networks, operating systems, and systems programming.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="cert-card fade-in">
+      <div class="cert-icon">🛡️</div>
+      <div class="cert-badge">
+        <div class="cert-badge-inner">
+          <div class="cert-title">Google Cybersecurity</div>
+          <div class="cert-issuer">Coursera</div>
+        </div>
+      </div>
+      <h3>Google Cybersecurity Professional Certificate</h3>
+      <p class="cert-description">
+        In Progress (4/9). Foundations, risk (NIST RMF, CIA Triad, OWASP), networks (TCP/IP, VPNs, firewalls), Linux &amp; SQL,
+        SIEM/IDS, and incident response.
+      </p>
+      <details>
+        <summary>View Course 1–4 highlights</summary>
+        <ul>
+          <li><strong>Course 1 — Foundations:</strong> CIA Triad, security frameworks, threats (phishing, malware, social engineering).</li>
+          <li><strong>Course 2 — Manage Security Risks:</strong> NIST RMF, OWASP, SIEM basics, incident response playbooks.</li>
+          <li><strong>Course 3 — Networks &amp; Security:</strong> TCP/IP, ports/protocols, VPNs, firewalls, IDS/IPS, DoS/DDoS.</li>
+          <li><strong>Course 4 — Linux &amp; SQL:</strong> Linux CLI, permissions, packages; SQL querying for analysis and investigations.</li>
+        </ul>
+      </details>
+      <div class="cert-footer">
+        <span class="cert-date">2025</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card fade-in">
+        <h3>Car Sales BI Dashboard</h3>
+        <p>Interactive Power BI dashboard for regional &amp; temporal trends; Python preprocessing and insights.</p>
+        <p class="project-tech"><strong>Tech:</strong> Power BI · Python · DSA</p>
+      </div>
+
+      <div class="project-card fade-in" style="animation-delay:.1s;">
+        <h3>Home Automation System</h3>
+        <p>Prototype smart home system with digital inputs and a secure, user-friendly Figma interface for remote control.</p>
+        <p class="project-tech"><strong>Tech:</strong> Figma · Sensors · Controllers</p>
+      </div>
+
+      <div class="project-card fade-in" style="animation-delay:.2s;">
+        <h3>Finance Management System</h3>
+        <p>Python tool for expense tracking, savings forecasting, and exports; responsive Figma UI.</p>
+        <p class="project-tech"><strong>Tech:</strong> Python · Figma</p>
+      </div>
+
+      <div class="project-card fade-in" style="animation-delay:.3s;">
+        <h3>Linux Hardening Playbook</h3>
+        <p>Bash automation for auditing, permissions, and CIS-aligned hardening (defense-in-depth).</p>
+        <p class="project-tech"><strong>Tech:</strong> Bash · Linux Security</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get In Touch</h2>
+
+    <div class="contact-grid tiles">
+      <div class="contact-item fade-in">
+        <div class="contact-icon">📧</div>
+        <h3>Email</h3>
+        <p><a href="mailto:nishaddamle2002@gmail.com">nishaddamle2002@gmail.com</a></p>
+        <p class="contact-note">preferred contact: Nishad</p>
+      </div>
+    
+      <div class="contact-item fade-in" style="animation-delay:.06s">
+        <div class="contact-icon">🧰</div>
+        <h3>GitHub</h3>
+        <p><a href="https://github.com/nishaddamle2002" target="_blank">github.com/nishaddamle2002</a></p>
+      </div>
+    
+      <div class="contact-item fade-in" style="animation-delay:.12s">
+        <div class="contact-icon">🔗</div>
+        <h3>LinkedIn</h3>
+        <p><a href="https://www.linkedin.com/in/nishaddamle2002/" target="_blank">linkedin.com/in/nishaddamle2002</a></p>
+      </div>
+    </div>
+    
+
+    <div class="contact-form fade-in">
+      <form action="https://formspree.io/f/mwpaprqw" method="POST">
+        <div class="form-group">
+          <label>$ name --input</label>
+          <input name="name" type="text" placeholder="Nishad" required />
+          <small class="field-sign">Signed by Nishad</small>
+        </div>
+        <div class="form-group">
+          <label>$ email --input</label>
+          <input name="_replyto" type="email" placeholder="nishad@example.com" required />
+        </div>
+        <div class="form-group">
+          <label>$ message --input</label>
+          <textarea name="message" placeholder="Your message here..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Nishad Damle | Hosted on GitHub Pages</p>
+  </footer>
+
+  <script src="src/js/main.js"></script>
+</body>
+</html>
